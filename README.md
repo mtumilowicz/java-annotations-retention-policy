@@ -1,4 +1,5 @@
 # annotations-retention-policy
+
 |Enum Constant    |Description    |    Example
 |-----------------|---|---|
 |SOURCE           |Annotations are to be discarded by the compiler.    |@Override, @SuppressWarnings
