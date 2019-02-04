@@ -39,5 +39,5 @@
     * tests
         ```
         assertThat(RuntimePolicy.class.getAnnotations(), arrayWithSize(1));
-        assertThat(RuntimePolicy.class.getAnnotations()[0].annotationType(), is(instanceOf(Deprecated.class)));
+        assertEquals(Deprecated.class, RuntimePolicy.class.getAnnotations()[0].annotationType());
         ```
