@@ -1,8 +1,7 @@
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.Matchers.arrayWithSize;
-import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
 /**
@@ -12,7 +11,7 @@ public class PolicyTest {
     @Test
     public void runtimePolicy() {
         assertThat(RuntimePolicy.class.getAnnotations(), arrayWithSize(1));
-        assertThat(RuntimePolicy.class.getAnnotations()[0].annotationType(), is(instanceOf(Deprecated.class)));
+        assertEquals(Deprecated.class, RuntimePolicy.class.getAnnotations()[0].annotationType());
     }
 
     @Test
