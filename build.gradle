@@ -3,7 +3,7 @@ plugins {
     id 'java'
 }
 
-group 'annotations-retention-policy'
+group 'java-annotations-retention-policy'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8

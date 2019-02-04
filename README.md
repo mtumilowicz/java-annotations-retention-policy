@@ -1,4 +1,4 @@
-# annotations-retention-policy
+# java-annotations-retention-policy
 
 # preview
 |Enum Constant    |Description    |    Example
