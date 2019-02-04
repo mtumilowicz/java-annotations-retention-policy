@@ -7,10 +7,17 @@
 |RUNTIME          |Annotations are to be recorded in the class file by the compiler and retained by the VM at run time, so they may be read reflectively.    |@Deprecated, @Target, @FunctionalInterface
 
 1. `SourcePolicy`
-    * code
+    * java code
         ```
         @SuppressWarnings("unchecked")
         class SourcePolicy {
+        }
+        ```
+    * compiled code
+        ```
+        class SourcePolicy {
+            SourcePolicy() {
+            }
         }
         ```
     * tests
@@ -18,11 +25,21 @@
         assertThat(SourcePolicy.class.getAnnotations(), arrayWithSize(0));
         ```
 1. `ClassPolicy`
-    * code
+    * java code
         ```
         class ClassPolicy {
             @NonNull
             String nonNullField;
+        }
+        ```
+    * compiled code
+        ```
+        class ClassPolicy {
+            @NonNull
+            String nonNullField;
+        
+            ClassPolicy() {
+            }
         }
         ```
     * tests
@@ -30,10 +47,18 @@
         assertThat(ClassPolicy.class.getAnnotations(), arrayWithSize(0));
         ```
 1. `RuntimePolicy`
-    * code
+    * java code
         ```
         @Deprecated
         class RuntimePolicy {
+        }
+        ```
+    * compiled code
+        ```
+        @Deprecated
+        class RuntimePolicy {
+            RuntimePolicy() {
+            }
         }
         ```
     * tests
