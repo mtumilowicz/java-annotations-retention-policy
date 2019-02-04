@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/mtumilowicz/annotations-retention-policy.svg?branch=master)](https://travis-ci.com/mtumilowicz/annotations-retention-policy)
+
 # java-annotations-retention-policy
 
 # preview
