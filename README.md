@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/mtumilowicz/annotations-retention-policy.svg?branch=master)](https://travis-ci.com/mtumilowicz/annotations-retention-policy)
+[![Build Status](https://travis-ci.com/mtumilowicz/java-annotations-retention-policy.svg?branch=master)](https://travis-ci.com/mtumilowicz/java-annotations-retention-policy)
 
 # java-annotations-retention-policy
 
