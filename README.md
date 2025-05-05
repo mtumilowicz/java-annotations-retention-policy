@@ -5,9 +5,9 @@
 # preview
 |Enum Constant    |Description    |    Example
 |-----------------|---|---|
-|SOURCE           |Annotations are to be discarded by the compiler.    |@Override, @SuppressWarnings
-|CLASS            |Annotations are to be recorded in the class file by the compiler but need not be retained by the VM at run time.    |lombok @NonNull
-|RUNTIME          |Annotations are to be recorded in the class file by the compiler and retained by the VM at run time, so they may be read reflectively.    |@Deprecated, @Target, @FunctionalInterface
+|SOURCE           | discarded by the compiler    |@Override, @SuppressWarnings
+|CLASS            | recorded in the .class file but discarded at run time.    |lombok @NonNull
+|RUNTIME          | recorded in the .class file and available at run time (by reflection).    |@Deprecated, @Target, @FunctionalInterface
 
 # project description
 We will provide examples with tests for each row of the table above.
